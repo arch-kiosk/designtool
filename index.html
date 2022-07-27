@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- comment the next line out if you are using webpack -->
+    <!--    <link rel=stylesheet type=text/css href="styles/styles.css"/>-->
+    <title>Kiosk Design Tool</title>
+    <script src="/static/scripts/devkiosktoast.js"></script>
+    <script src="/static/scripts/iziToast.js"></script>
+    <link rel=stylesheet href="/static/scripts/iziToast.css" type="text/css">
+</head>
+<body class="kdt-body">
+<div id="headers">
+    <div id="kdt-header">
+        <div id="kdt-logogroup">
+            <div id="kdt-logo">
+                <div id="kdt-img"></div>
+            </div>
+            <div id="kdt-logotext">
+                <div id="kdt-maintitlegroup">
+
+                    <div id="kdt-maintitle">Design Tool</div>
+
+                </div>
+
+                <!--                <div id="subtitle-shadow">Kiosk</div>-->
+                <!--                <div id="subtitle">Workstations</div>-->
+
+            </div>
+        </div>
+    </div> <!-- header -->
+</div> <!-- headers -->
+<div class="outer-div">
+    <h1>color table</h1>
+    <div class="color-table">
+        <div class="color-name"></div>
+        <div class="label-90dg">lighter</div>
+        <div class="label-90dg"></div>
+        <div class="label-90dg">darker</div>
+        <div class="label-90dg">button</div>
+        <div class="label-90dg">input</div>
+        <div class="label-90dg">primary</div>
+        <div class="label-90dg">accent</div>
+        <div class="label-90dg">success</div>
+        <div class="label-90dg">warning</div>
+        <div class="label-90dg">error</div>
+
+        <div class="color-name">--col-bg-body</div>
+        <div class="swatch col-bg-body-lighter"></div>
+        <div class="swatch col-bg-body"></div>
+        <div class="swatch col-bg-body-darker"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch dummy"></div>
+
+        <div class="color-name">--col-bg-1</div>
+        <div class="swatch col-bg-1-lighter"></div>
+        <div class="swatch col-bg-1"></div>
+        <div class="swatch col-bg-1-darker"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch col-bg-1-input"></div>
+        <div class="swatch col-primary-bg-1"></div>
+        <div class="swatch col-accent-bg-1"></div>
+        <div class="swatch col-success-bg-1"></div>
+        <div class="swatch col-warning-bg-1"></div>
+        <div class="swatch col-error-bg-1"></div>
+
+        <div class="color-name">--col-bg-2</div>
+        <div class="swatch col-bg-2-lighter"></div>
+        <div class="swatch col-bg-2"></div>
+        <div class="swatch col-bg-2-darker"></div>
+        <div class="swatch col-bg-2-button"></div>
+        <div class="swatch col-bg-2-input"></div>
+        <div class="swatch col-primary-bg-2"></div>
+        <div class="swatch col-accent-bg-2"></div>
+        <div class="swatch col-success-bg-2"></div>
+        <div class="swatch col-warning-bg-2"></div>
+        <div class="swatch col-error-bg-2"></div>
+
+        <div class="color-name">--col-bg-3</div>
+        <div class="swatch col-bg-3-lighter"></div>
+        <div class="swatch col-bg-3"></div>
+        <div class="swatch col-bg-3-darker"></div>
+        <div class="swatch col-bg-3-button"></div>
+        <div class="swatch col-bg-3-input"></div>
+        <div class="swatch col-primary-bg-3"></div>
+        <div class="swatch col-accent-bg-3"></div>
+        <div class="swatch col-success-bg-3"></div>
+        <div class="swatch col-warning-bg-3"></div>
+        <div class="swatch col-error-bg-3"></div>
+
+        <div class="color-name">--col-bg-ack</div>
+        <div class="swatch col-bg-ack-lighter"></div>
+        <div class="swatch col-bg-ack"></div>
+        <div class="swatch col-bg-ack-darker"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch col-primary-bg-ack"></div>
+        <div class="swatch col-accent-bg-ack"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch dummy"></div>
+
+        <div class="color-name">--col-bg-att</div>
+        <div class="swatch col-bg-att-lighter"></div>
+        <div class="swatch col-bg-att"></div>
+        <div class="swatch col-bg-att-darker"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch col-primary-bg-att"></div>
+        <div class="swatch col-accent-bg-att"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch dummy"></div>
+
+        <div class="color-name">--col-bg-alert</div>
+        <div class="swatch col-bg-alert-lighter"></div>
+        <div class="swatch col-bg-alert"></div>
+        <div class="swatch col-bg-alert-darker"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch col-primary-bg-alert"></div>
+        <div class="swatch col-accent-bg-alert"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch dummy"></div>
+
+        <div class="color-name">--col-bg-btn</div>
+        <div class="swatch col-bg-btn-lighter"></div>
+        <div class="swatch col-bg-btn"></div>
+        <div class="swatch col-bg-btn-darker"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch col-primary-bg-btn"></div>
+        <div class="swatch col-accent-bg-btn"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch dummy"></div>
+
+    </div>
+    <div class="kiosk-header">
+        <div id="header">
+            <div id="logogroup">
+                <div id="logo">
+                    <div id="img"></div>
+                </div>
+                <div id="logotext">
+                    <div id="maintitlegroup">
+
+                        <div id="maintitle">Kiosk</div>
+
+                        <div id="logo-bottom">Synchronizing Recording System</div>
+
+                    </div>
+
+                    <div id="subtitle-shadow">Kiosk</div>
+                    <div id="subtitle">Module-title</div>
+
+                </div>
+            </div>
+            <div id="menus">
+                <div class="kiosk-version">
+                    kiosk <span>0.10.1 (Picky Popsicle)</span>
+                </div>
+
+
+                <div class="dropdown">
+                    <div id="currentuser">
+                        <div id="current-user-image"></div>
+                        <p>Lutz</p>
+                    </div>
+                    <div class="dropdown-content" id="user-menu">
+                        <a href="#" onclick="userMenuClick('logout','/logout')">logout</a>
+                        <a href="#"
+                           onclick="userMenuClick('profile','/userprofile/8fa2cd40-4eb0-47f4-b3f7-9baaabfcbeee')">profile</a>
+                    </div>
+                </div>
+
+
+                <div class="dropdown" id="main-menu-div">
+                    <div id="hamburger" class="hamburglar is-closed">
+                        <div class="burger-icon">
+                            <div class="burger-container">
+                                <span class="burger-bun-top"></span>
+                                <span class="burger-filling"></span>
+                                <span class="burger-bun-bot"></span>
+                            </div>
+                        </div>
+
+                        <!-- svg ring containter -->
+                        <div class="burger-ring">
+                            <svg class="svg-ring" stroke="var(--col-accent-bg-1)">
+                                <path class="path" fill="none" stroke-miterlimit="10" stroke-width="4"
+                                      d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2"/>
+                            </svg>
+                        </div>
+                        <!-- the masked path that animates the fill to the ring -->
+
+                        <svg width="0" height="0">
+                            <mask id="mask">
+                                <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000"
+                                      stroke-miterlimit="10" stroke-width="4"
+                                      d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4"/>
+                            </mask>
+                        </svg>
+                        <div class="path-burger">
+                            <div class="animate-path">
+                                <div class="path-rotation"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="homebtn" class="animated">
+                        <span class="svg-icon flat-line" id="line-home"></span>
+                    </div>
+
+                </div>
+            </div> <!-- header -->
+        </div><!-- kiosk-header -->
+        <div id="system-messages" change_mark="1615840857255.465">
+            <div id="SYS_MSG_ID_STORE_NOT_READY" class="system-message severity-error">
+                <p class="message-headline">
+                    <i class="fa system-message-icon severity-error"></i>
+                    This is a rather severe system message
+                    <i id="SYS_MSG_ID_STORE_NOT_READY" class="fa system-message-close"></i>
+                </p>
+                <p class="message-body">15. Mar 16:40:57: This is some further description of the rather severe
+                    message </p>
+            </div>
+            <div class="system-message severity-warning">
+                <p class="message-headline">
+                    <i class="fa system-message-icon severity-warning"></i>
+                    This is a not so severe system message
+                    <i class="fa system-message-close"></i>
+                </p>
+                <p class="message-body">15. Mar 16:40:57: This is some further description of the not so severe
+                    message </p>
+            </div>
+            <div class="system-message severity-info">
+                <p class="message-headline">
+                    <i class="fa system-message-icon severity-info"></i>
+                    Just saying...
+                    <i class="fa system-message-close"></i>
+                </p>
+                <p class="message-body">15. Mar 16:40:57: This is more or less good to know</p>
+            </div>
+        </div>
+    </div>
+    <div class="sample">
+        <div class="sample-outer-div">
+            <div class="sample-header">
+                <div><i class="sample-icon fas fa-paw"></i></div>
+                <h1>Sample Dialog on Background 1</h1>
+            </div>
+            <div class="success-message"><i class="sample-icon fas fa-check-circle"></i>
+                <p>This was successful!</p></div>
+            <div id="file-selection">
+
+                <label class="kiosk-dialog-label" for="restore-file">backup file</label>
+                <div class="awesomplete"><input class="kiosk-dialog-textfield dropdown-input"
+                                                data-list="#restore-files"
+                                                errclass="kiosk-error-border" id="restore-file" name="restore_file"
+                                                placeholder="local path and filename of backup file" type="text"
+                                                value="" autocomplete="off" aria-expanded="false"
+                                                aria-owns="awesomplete_list_1" role="combobox">
+                    <ul role="listbox" id="awesomplete_list_1" hidden=""></ul>
+                </div>
+                <button id="restore-drop-down" class="kiosk-dropdown-btn" type="button"><span class="caret"></span>
+                </button>
+            </div>
+            <div class="three-cols">
+                <form>
+                    <label for="sample-input" class="kiosk-dialog-label kiosk-sample-label">sample input</label>
+                    <input id="sample-input" class="kiosk-dialog-textfield sample-text-field" type="text">
+                    <label for="error-input" class="kiosk-dialog-label kiosk-sample-label error-label">erroneous
+                        input</label>
+                    <input id="error-input" class="kiosk-dialog-textfield error-text-field" type="text">
+                </form>
+                <div class="col-2">
+                    <div class="warning-message">This is a warning message
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+
+                </div>
+                <div class="col-3">
+                    <div class="error-message">This is an error message
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-on-bg">
+                <p>This is accent text.</p>
+                <p>This is success text.</p>
+                <p>This is error text.</p>
+                <p>This is warning text.</p>
+            </div>
+            <div class="sample-footer">
+                <div class="dialog-modal-buttons">
+                    <div class="dialog-modal-right-buttons">
+                        <button id="bt-close" class="modal-close"></button>
+                        <button id="bt-ok" class="modal-ok" type="submit"></button>
+                        <button disabled id="bt-next" class="modal-next"></button>
+                        <button id="bt-back" class="modal-back"></button>
+                        <button id="bt-cancel" class="modal-cancel"></button>
+                        <button id="bt-delete" class="modal-delete"></button>
+                        <button id="bt-delete-dis" class="modal-delete" disabled></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sample-2">
+        <div class="sample-outer-div">
+            <div class="sample-header">
+                <div><i class="sample-icon fas fa-paw"></i></div>
+                <h1>Sample Dialog on Background 2</h1>
+            </div>
+            <div class="success-message"><i class="sample-icon fas fa-check-circle"></i>
+                <p>This was successful!</p></div>
+            <div id="file-selection-2">
+
+                <label class="kiosk-dialog-label" for="restore-file">backup file</label>
+                <div class="awesomplete"><input class="kiosk-dialog-textfield dropdown-input"
+                                                data-list="#restore-files"
+                                                errclass="kiosk-error-border" id="restore-file-2" name="restore_file"
+                                                placeholder="local path and filename of backup file" type="text"
+                                                value="" autocomplete="off" aria-expanded="false"
+                                                aria-owns="awesomplete_list_1" role="combobox">
+                    <ul role="listbox" id="awesomplete_list_1-2" hidden=""></ul>
+                </div>
+                <button id="restore-drop-down-2" class="kiosk-dropdown-btn" type="button"><span class="caret"></span>
+                </button>
+            </div>
+            <div class="three-cols">
+                <form>
+                    <label for="sample-input" class="kiosk-dialog-label kiosk-sample-label">sample input</label>
+                    <input id="sample-input-2" class="kiosk-dialog-textfield sample-text-field" type="text">
+                    <label for="error-input" class="kiosk-dialog-label kiosk-sample-label error-label">erroneous
+                        input</label>
+                    <input id="error-input-2" class="kiosk-dialog-textfield error-text-field" type="text">
+                </form>
+                <div class="col-2">
+                    <div class="warning-message">This is a warning message
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+
+                </div>
+                <div class="col-3">
+                    <div class="error-message">This is an error message
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-on-bg">
+                <p>This is accent text.</p>
+                <p>This is success text.</p>
+                <p>This is error text.</p>
+                <p>This is warning text.</p>
+            </div>
+            <div class="sample-footer">
+                <div class="dialog-modal-buttons">
+                    <div class="dialog-modal-right-buttons">
+                        <button id="bt-close-2" class="modal-close"></button>
+                        <button id="bt-ok-2" class="modal-ok" type="submit"></button>
+                        <button disabled id="bt-next-2" class="modal-next"></button>
+                        <button id="bt-back-2" class="modal-back"></button>
+                        <button id="bt-cancel-2" class="modal-cancel"></button>
+                        <button id="bt-delete-2" class="modal-delete"></button>
+                        <button id="bt-delete-dis-2" class="modal-delete" disabled></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sample-3">
+    <div class="sample-outer-div">
+        <div class="sample-header">
+            <div><i class="sample-icon fas fa-paw"></i></div>
+            <h1>Sample Dialog on Background 3</h1>
+        </div>
+        <div class="success-message"><i class="sample-icon fas fa-check-circle"></i>
+            <p>This was successful!</p></div>
+        <div id="file-selection-2">
+
+            <label class="kiosk-dialog-label" for="restore-file">backup file</label>
+            <div class="awesomplete"><input class="kiosk-dialog-textfield dropdown-input"
+                                            data-list="#restore-files"
+                                            errclass="kiosk-error-border" id="restore-file-2" name="restore_file"
+                                            placeholder="local path and filename of backup file" type="text"
+                                            value="" autocomplete="off" aria-expanded="false"
+                                            aria-owns="awesomplete_list_1" role="combobox">
+                <ul role="listbox" id="awesomplete_list_1-2" hidden=""></ul>
+            </div>
+            <button id="restore-drop-down-2" class="kiosk-dropdown-btn" type="button"><span class="caret"></span>
+            </button>
+        </div>
+        <div class="three-cols">
+            <form>
+                <label for="sample-input" class="kiosk-dialog-label kiosk-sample-label">sample input</label>
+                <input id="sample-input-2" class="kiosk-dialog-textfield sample-text-field" type="text">
+                <label for="error-input" class="kiosk-dialog-label kiosk-sample-label error-label">erroneous
+                    input</label>
+                <input id="error-input-2" class="kiosk-dialog-textfield error-text-field" type="text">
+            </form>
+            <div class="col-2">
+                <div class="warning-message">This is a warning message
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                </div>
+
+            </div>
+            <div class="col-3">
+                <div class="error-message">This is an error message
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                </div>
+            </div>
+        </div>
+        <div class="text-on-bg">
+            <p>This is accent text.</p>
+            <p>This is success text.</p>
+            <p>This is error text.</p>
+            <p>This is warning text.</p>
+        </div>
+        <div class="sample-footer">
+            <div class="dialog-modal-buttons">
+                <div class="dialog-modal-right-buttons">
+                    <button id="bt-close-2" class="modal-close"></button>
+                    <button id="bt-ok-2" class="modal-ok" type="submit"></button>
+                    <button disabled id="bt-next-2" class="modal-next"></button>
+                    <button id="bt-back-2" class="modal-back"></button>
+                    <button id="bt-cancel-2" class="modal-cancel"></button>
+                    <button id="bt-delete-2" class="modal-delete"></button>
+                    <button id="bt-delete-dis-2" class="modal-delete" disabled></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+<script>
+
+    (() => {
+        let el = document.getElementsByClassName("swatch");
+        console.log(el)
+        for (const e of el) {
+            e.addEventListener("click", (evt) => {
+                let classes = evt.target.classList;
+                kioskSuccessToast("--" + classes[1]);
+            });
+        }
+    })();
+
+</script>
+</html>

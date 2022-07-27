@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- comment the next line out if you are using webpack -->
+    <!--    <link rel=stylesheet type=text/css href="styles/styles.css"/>-->
+    <title>Kiosk Design Tool</title>
+</head>
+<body>
+<div id="headers">
+    <div id="header">
+        <div id="logogroup">
+            <a href="/refresh">
+                <div id="logo">
+                    <div id="img"></div>
+                    <!-- <svg id="img" xmlns="http://www.w3.org/2000/svg" width="120" height="80" viewBox="10 9 103 58">
+                    <path d="M76.124 2.754l-2.86-.234-3.148.7-3.147 1.167-3.434 4.898-.86 3.5-2.288 6.532-.572 7.932-.858 41.058v.933-.232l2.003 3.033 1.43.934 2.862.933h1.43l2.576-1.633 1.716-2.1 1.144-2.333 1.145-2.33 3.147-9.1.858-3.5.858-3.032 2.003-2.333.858-.933 1.43-1.633-.286-6.3v-2.8l-2.29-9.564-.285-2.566-.572-2.1-.86-3.966v-4.2L77.84 9.52V5.085z" fill="#8a0"/><g fill="#a05a2c">
+                    <path d="M90 0h30v79.858H90z"/><path d="M90 79.858l-9.146.14c6.098.08 9.29-2.973 9.375-9.374z"/></g><g fill="#fea"><path d="M0 0h50v79.856H0z"/><path d="M50 79.856l9.146.142c-6.098.082-9.29-3.026-9.375-9.54z"/></g></svg>
+                    -->
+                </div>
+            </a>
+            <div id="logotext">
+                <div id="maintitlegroup">
+
+                    <div id="maintitle">Uronarti</div>
+
+                    <div id="logo-bottom">Regional Archaeological Project</div>
+
+                </div>
+
+                <div id="subtitle-shadow">Kiosk</div>
+                <div id="subtitle">Workstations</div>
+
+            </div>
+        </div>
+        <div id="menus">
+            <div class="kiosk-version">
+                kiosk <span>0.10.1 (Picky Popsicle)</span>
+            </div>
+
+
+            <div class="dropdown">
+                <div id="currentuser">
+                    <img src="/static/assets/images/pharaoh-white.svg"/>
+                    <p>User</p>
+                </div>
+                <div class="dropdown-content" id="user-menu">
+                    <a href="#" onclick="userMenuClick('logout','/logout')">logout</a>
+                    <a href="#"
+                       onclick="userMenuClick('profile','/userprofile/8fa2cd40-4eb0-47f4-b3f7-9baaabfcbeee')">profile</a>
+                </div>
+            </div>
+
+
+            <div class="dropdown" id="main-menu-div">
+                <div id="hamburger" class="hamburglar is-closed">
+                    <div class="burger-icon">
+                        <div class="burger-container">
+                            <span class="burger-bun-top"></span>
+                            <span class="burger-filling"></span>
+                            <span class="burger-bun-bot"></span>
+                        </div>
+                    </div>
+
+                    <!-- svg ring containter -->
+                    <div class="burger-ring">
+                        <svg class="svg-ring">
+                            <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"
+                                  d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2"/>
+                        </svg>
+                    </div>
+                    <!-- the masked path that animates the fill to the ring -->
+
+                    <svg width="0" height="0">
+                        <mask id="mask">
+                            <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10"
+                                  stroke-width="4"
+                                  d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4"/>
+                        </mask>
+                    </svg>
+                    <div class="path-burger">
+                        <div class="animate-path">
+                            <div class="path-rotation"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-content" id="main-menu">
+
+
+                    <a href="#"
+                       onclick="menuClick(()=>{ triggerAdministration(&#39;administration.administration_show&#39;); })">
+                        administration
+                    </a>
+
+
+                    <a href="#"
+                       onclick="menuClick(()=>{ triggerBugsAndFeatures(&#39;bugsandfeatures.bugs_and_features_show&#39;); })">
+                        bugs and features
+                    </a>
+
+
+                    <a href="#"
+                       onclick="menuClick(()=>{ triggerDailyReview(&#39;dailyreview.daily_review_show&#39;); })">
+                        daily review
+                    </a>
+
+
+                    <a href="#"
+                       onclick="menuClick(()=>{ triggerDirectorsView(&#39;directorsview.directors_view_show&#39;); })">
+                        director&#39;s view
+                    </a>
+
+
+                    <a href="#"
+                       onclick="menuClick(()=>{ triggerFileRepository(&#39;filerepository.file_repository_show&#39;); })">
+                        file repository
+                    </a>
+
+
+                    <a href="#" onclick="menuClick(()=>{ triggerPlayground(&#39;playground.playground_show&#39;); })">
+                        playground
+                    </a>
+
+
+                    <div class="main-menu-separator"></div>
+
+
+                    <a href="#"
+                       onclick="menuClick(()=>{ triggerSynchronize(&#39;workstationmanagercontroller.synchronize_check&#39;); })">
+                        synchronize
+                    </a>
+
+
+                </div>
+            </div>
+            <div id="homebtn" class="animated">
+                <span class="svg-icon flat-line" id="line-home"></span>
+            </div>
+
+        </div>
+    </div> <!-- header -->
+    <div>
+
+        <div id="system-messages" change_mark="1615672308182.58"
+
+             style="display:none"
+        >
+
+        </div>
+
+
+    </div>
+</div> <!-- headers -->
+</body>
+</html>
