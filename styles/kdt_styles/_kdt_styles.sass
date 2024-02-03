@@ -1,3 +1,10 @@
+\:root
+  --header-logo-img: url('static/assets/images/kiosk_logo.png')
+  --header-logo-width: 180px
+  --header-logo-height: 120px
+  --current-user-svg: url('static/assets/images/login.svg')
+  --user-password-svg: url('static/assets/images/password.svg')
+
 #kdt-headers
   display: flex
   flex-direction: column
@@ -351,4 +358,61 @@ h1
       &:nth-child(4)
         color: $col-warning-bg-3
         font-weight: bold
+
+.sample-body-body
+  height: 50vh
+  //width: 100vw
+  background: $col-bg-body
+  padding: 1em
+  .normal-text
+    color: $col-primary-bg-body
+    margin: 1em 0 1em 0
+  .text-on-bg
+    display: flex
+    flex-direction: row
+    width: 100%
+    justify-content: space-between
+    margin-bottom: 1em
+    p
+      &:nth-child(1)
+        color: $col-accent-bg-body
+        font-weight: normal
+      &:nth-child(2)
+        color: $col-success-bg-body
+        font-weight: normal
+      &:nth-child(3)
+        color: $col-error-bg-body
+        font-weight: normal
+      &:nth-child(4)
+        color: $col-warning-bg-body
+        font-weight: normal
+
+.sample-body-body-dm
+  height: 50vh
+  //width: 100vw
+  background: $col-bg-body-dm
+  padding: 1em
+  .normal-text
+    color: $col-primary-bg-body-dm
+    margin: 1em 0 1em 0
+  .text-on-bg
+    display: flex
+    flex-direction: row
+    width: 100%
+    justify-content: space-between
+    margin-bottom: 1em
+    p
+      &:nth-child(1)
+        color: $col-accent-bg-body-dm
+        font-weight: normal
+      &:nth-child(2)
+        color: $col-success-bg-body-dm
+        font-weight: normal
+      &:nth-child(3)
+        color: $col-error-bg-body-dm
+        font-weight: normal
+      &:nth-child(4)
+        color: $col-warning-bg-body-dm
+        font-weight: normal
+
 

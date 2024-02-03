@@ -5,8 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- comment the next line out if you are using webpack -->
-    <!--    <link rel=stylesheet type=text/css href="styles/styles.css"/>-->
+    <!--<link rel=stylesheet type=text/css href="styles/styles.css"/>-->
     <title>Kiosk Design Tool</title>
     <script src="/static/scripts/devkiosktoast.js"></script>
     <script src="/static/scripts/iziToast.js"></script>
@@ -54,12 +53,25 @@
         <div class="swatch col-bg-body-darker"></div>
         <div class="swatch dummy"></div>
         <div class="swatch dummy"></div>
-        <div class="swatch dummy"></div>
-        <div class="swatch dummy"></div>
-        <div class="swatch dummy"></div>
-        <div class="swatch dummy"></div>
-        <div class="swatch dummy"></div>
+        <div class="swatch col-primary-bg-body"></div>
+        <div class="swatch col-accent-bg-body"></div>
+        <div class="swatch col-success-bg-body"></div>
+        <div class="swatch col-warning-bg-body"></div>
+        <div class="swatch col-error-bg-body"></div>
 
+        <div class="color-name">--col-bg-body...-dm</div>
+        <div class="swatch col-bg-body-lighter-dm"></div>
+        <div class="swatch col-bg-body-dm"></div>
+        <div class="swatch col-bg-body-darker-dm"></div>
+        <div class="swatch dummy"></div>
+        <div class="swatch col-bg-body-input-dm"></div>
+        <div class="swatch col-primary-bg-body-dm"></div>
+        <div class="swatch col-accent-bg-body-dm"></div>
+        <div class="swatch col-success-bg-body-dm"></div>
+        <div class="swatch col-warning-bg-body-dm"></div>
+        <div class="swatch col-error-bg-body-dm"></div>
+
+        
         <div class="color-name">--col-bg-1</div>
         <div class="swatch col-bg-1-lighter"></div>
         <div class="swatch col-bg-1"></div>
@@ -442,8 +454,195 @@
         </div>
     </div>
 </div>
+
+<div class="sample-body">
+    <div class="kiosk-header">
+        <div id="header">
+            <div id="logogroup">
+                <div id="logo">
+                    <div id="img"></div>
+                </div>
+                <div id="logotext">
+                    <div id="maintitlegroup">
+
+                        <div id="maintitle">Kiosk</div>
+
+                        <div id="logo-bottom">Synchronizing Recording System</div>
+
+                    </div>
+
+                    <div id="subtitle-shadow">Kiosk</div>
+                    <div id="subtitle">Module-title</div>
+
+                </div>
+            </div>
+            <div id="menus">
+                <div class="kiosk-version">
+                    kiosk <span>0.10.1 (Picky Popsicle)</span>
+                </div>
+
+
+                <div class="dropdown">
+                    <div id="currentuser">
+                        <div id="current-user-image"></div>
+                        <p>User</p>
+                    </div>
+                    <div class="dropdown-content" id="user-menu">
+                        <a href="#" onclick="userMenuClick('logout','/logout')">logout</a>
+                        <a href="#"
+                           onclick="userMenuClick('profile','/userprofile/8fa2cd40-4eb0-47f4-b3f7-9baaabfcbeee')">profile</a>
+                    </div>
+                </div>
+
+
+                <div class="dropdown" id="main-menu-div">
+                    <div id="hamburger" class="hamburglar is-closed">
+                        <div class="burger-icon">
+                            <div class="burger-container">
+                                <span class="burger-bun-top"></span>
+                                <span class="burger-filling"></span>
+                                <span class="burger-bun-bot"></span>
+                            </div>
+                        </div>
+
+                        <!-- svg ring containter -->
+                        <div class="burger-ring">
+                            <svg class="svg-ring" stroke="var(--col-accent-bg-1)">
+                                <path class="path" fill="none" stroke-miterlimit="10" stroke-width="4"
+                                      d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2"/>
+                            </svg>
+                        </div>
+                        <!-- the masked path that animates the fill to the ring -->
+
+                        <svg width="0" height="0">
+                            <mask id="mask">
+                                <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000"
+                                      stroke-miterlimit="10" stroke-width="4"
+                                      d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4"/>
+                            </mask>
+                        </svg>
+                        <div class="path-burger">
+                            <div class="animate-path">
+                                <div class="path-rotation"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="homebtn" class="animated">
+                        <span class="svg-icon flat-line" id="line-home"></span>
+                    </div>
+
+                </div>
+            </div> <!-- header -->
+        </div><!-- kiosk-header -->
+        <div class="sample-body-body">
+            <div class="normal-text">
+                <p>This is some normal text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, commodi consequuntur earum ex explicabo facilis itaque molestias necessitatibus neque officia provident quaerat, quidem quos reiciendis rerum suscipit, vero voluptas voluptates.</p>
+            </div>
+            <div class="text-on-bg">
+                <p>This is accent text.</p>
+                <p>This is success text.</p>
+                <p>This is error text.</p>
+                <p>This is warning text.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="sample-body-dm">
+    <div class="kiosk-header">
+        <div id="header">
+            <div id="logogroup">
+                <div id="logo">
+                    <div id="img"></div>
+                </div>
+                <div id="logotext">
+                    <div id="maintitlegroup">
+
+                        <div id="maintitle">Kiosk</div>
+
+                        <div id="logo-bottom">Synchronizing Recording System</div>
+
+                    </div>
+
+                    <div id="subtitle-shadow">Kiosk</div>
+                    <div id="subtitle">Module-title</div>
+
+                </div>
+            </div>
+            <div id="menus">
+                <div class="kiosk-version">
+                    kiosk <span>0.10.1 (Picky Popsicle)</span>
+                </div>
+
+
+                <div class="dropdown">
+                    <div id="currentuser">
+                        <div id="current-user-image"></div>
+                        <p>User</p>
+                    </div>
+                    <div class="dropdown-content" id="user-menu">
+                        <a href="#" onclick="userMenuClick('logout','/logout')">logout</a>
+                        <a href="#"
+                           onclick="userMenuClick('profile','/userprofile/8fa2cd40-4eb0-47f4-b3f7-9baaabfcbeee')">profile</a>
+                    </div>
+                </div>
+
+
+                <div class="dropdown" id="main-menu-div">
+                    <div id="hamburger" class="hamburglar is-closed">
+                        <div class="burger-icon">
+                            <div class="burger-container">
+                                <span class="burger-bun-top"></span>
+                                <span class="burger-filling"></span>
+                                <span class="burger-bun-bot"></span>
+                            </div>
+                        </div>
+
+                        <!-- svg ring containter -->
+                        <div class="burger-ring">
+                            <svg class="svg-ring" stroke="var(--col-accent-bg-1)">
+                                <path class="path" fill="none" stroke-miterlimit="10" stroke-width="4"
+                                      d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2"/>
+                            </svg>
+                        </div>
+                        <!-- the masked path that animates the fill to the ring -->
+
+                        <svg width="0" height="0">
+                            <mask id="mask">
+                                <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000"
+                                      stroke-miterlimit="10" stroke-width="4"
+                                      d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4"/>
+                            </mask>
+                        </svg>
+                        <div class="path-burger">
+                            <div class="animate-path">
+                                <div class="path-rotation"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="homebtn" class="animated">
+                        <span class="svg-icon flat-line" id="line-home"></span>
+                    </div>
+
+                </div>
+            </div> <!-- header -->
+        </div><!-- kiosk-header -->
+        <div class="sample-body-body-dm">
+            <div class="normal-text">
+                <p>This is some normal text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, commodi consequuntur earum ex explicabo facilis itaque molestias necessitatibus neque officia provident quaerat, quidem quos reiciendis rerum suscipit, vero voluptas voluptates.</p>
+            </div>
+            <div class="text-on-bg">
+                <p>This is accent text.</p>
+                <p>This is success text.</p>
+                <p>This is error text.</p>
+                <p>This is warning text.</p>
+            </div>
+
+        </div>
+    </div>
 </div>
 
+<script type="module" src="/index.js"></script>
 </body>
 <script>
 
